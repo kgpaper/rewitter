@@ -1,5 +1,6 @@
 import { dbService } from "fbase";
 import React, { useEffect, useState } from "react";
+import Reweet from "components/Reweet"
 
 const Home = ({ userObj }) => {
   const [reweet, setReweet] = useState("");
@@ -27,7 +28,7 @@ const Home = ({ userObj }) => {
     } = event;
     setReweet(value);
   };
-  
+
   return (
     <div>
       <form onSubmit={onSubmit}>
@@ -36,9 +37,7 @@ const Home = ({ userObj }) => {
       </form>
       <div>
         {reweets.map((reweet) => (
-          <div key={reweet.id}>
-            <h4>{reweet.text}</h4>
-          </div>
+          <Reweet key={reweet.id} reweetObj={reweet} isOwner={reweet.creatorId === userObj.uid} />
         ))}
       </div>
     </div>
