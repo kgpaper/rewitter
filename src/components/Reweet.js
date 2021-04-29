@@ -29,11 +29,15 @@ const Reweet = ({ reweetObj, isOwner }) => {
     <div>
       {editing ? (
         <>
-          <form onSubmit={onSubmit}>
-            <input type="text" placeholder="edit your reweet" value={newReweet} required onChange={onChange} />
-            <input type="submit" value="update Reweet" />
-          </form>
-          <button onClick={toggleEditing}>Cancle</button>
+        {isOwner && (
+          <>
+            <form onSubmit={onSubmit}>
+              <input type="text" placeholder="edit your reweet" value={newReweet} required onChange={onChange} />
+              <input type="submit" value="update Reweet" />
+            </form>
+            <button onClick={toggleEditing}>Cancle</button>
+          </>
+        )}
         </>
       ) : (
         <>
