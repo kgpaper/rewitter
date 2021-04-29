@@ -42,6 +42,7 @@ const Reweet = ({ reweetObj, isOwner }) => {
       ) : (
         <>
           <h4>{reweetObj.text}</h4>
+          {reweetObj.attachmentUrl && <img src={reweetObj.attachmentUrl} width="50px" height="50px" />}
           {isOwner && (
             <>
               <button onClick={onDeleteClick}>Delete Reweet</button>
