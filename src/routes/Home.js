@@ -6,7 +6,7 @@ import Reweet from "components/Reweet";
 const Home = ({ userObj }) => {
   const [reweet, setReweet] = useState("");
   const [reweets, setReweets] = useState([]);
-  const [attachment, setAttachment] = useState();
+  const [attachment, setAttachment] = useState("");
 
   useEffect(() => {
     dbService.collection("reweets").onSnapshot((snapshot) => {
