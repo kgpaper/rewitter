@@ -8,6 +8,11 @@ function App() {
   useEffect(() => {
     authService.onAuthStateChanged((user) => {
       if (user) {
+        if(user.displayName==null){
+          const ind = user.email.indexOf("@")
+          const end = user.email.substring(0,ind)
+          user.updateProfile({displayName:end})
+        }
         setUserObj(user)
       }
       setInit(true);
