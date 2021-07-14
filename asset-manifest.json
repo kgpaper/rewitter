@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rewitter/static/css/main.524a92a3.chunk.css",
+    "main.css": "/rewitter/static/css/main.3b3c2022.chunk.css",
     "main.js": "/rewitter/static/js/main.6f3bb88c.chunk.js",
     "main.js.map": "/rewitter/static/js/main.6f3bb88c.chunk.js.map",
     "runtime-main.js": "/rewitter/static/js/runtime-main.db76f676.js",
@@ -8,13 +8,13 @@
     "static/js/2.f367e696.chunk.js": "/rewitter/static/js/2.f367e696.chunk.js",
     "static/js/2.f367e696.chunk.js.map": "/rewitter/static/js/2.f367e696.chunk.js.map",
     "index.html": "/rewitter/index.html",
-    "static/css/main.524a92a3.chunk.css.map": "/rewitter/static/css/main.524a92a3.chunk.css.map",
+    "static/css/main.3b3c2022.chunk.css.map": "/rewitter/static/css/main.3b3c2022.chunk.css.map",
     "static/js/2.f367e696.chunk.js.LICENSE.txt": "/rewitter/static/js/2.f367e696.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.db76f676.js",
     "static/js/2.f367e696.chunk.js",
-    "static/css/main.524a92a3.chunk.css",
+    "static/css/main.3b3c2022.chunk.css",
     "static/js/main.6f3bb88c.chunk.js"
   ]
 }
